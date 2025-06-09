@@ -1,6 +1,14 @@
 <template>
   <form @submit.prevent="formSubmitted">
-    <BaseInput label="New Task" v-model="newTask" />
+    <BaseInput
+      label="New Task"
+      v-model="newTask"
+      :class="{ 'border-red-500': errorMessage }"
+      @input="errorMessage = ''"
+    />
+    <p v-if="errorMessage" class="text-red-500 text-sm mt-1">
+      {{ errorMessage }}
+    </p>
     <div class="button-container">
       <BaseButton>Add</BaseButton>
     </div>
@@ -17,13 +25,15 @@ const emit = defineEmits<{
 }>();
 
 const newTask = ref("");
+const errorMessage = ref("");
 
 const formSubmitted = () => {
   if (newTask.value.trim()) {
     emit("addTask", newTask.value.trim());
     newTask.value = "";
+    errorMessage.value = "";
   } else {
-    alert("Task cannot be empty");
+    errorMessage.value = "Task cannot be empty";
   }
 };
 </script>
