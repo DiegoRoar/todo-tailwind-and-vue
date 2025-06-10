@@ -3,11 +3,13 @@
     <li
       v-for="(task, index) in props.tasks"
       :key="task.id"
-      class="flex items-center gap-2 bg-white border border-gray-100 rounded px-3 py-2 shadow-sm text-gray-800 text-base"
+      class="flex items-start gap-2 bg-white border border-gray-100 rounded px-3 py-2 shadow-sm text-gray-800 text-base"
     >
-      <span class="text-xs text-gray-400">{{ index + 1 }}</span>
-      <span class="flex-1 truncate">{{ task.title }}</span>
-      <label class="flex items-center gap-2 text-sm text-gray-600">
+      <span class="text-xs text-gray-400 mt-1">{{ index + 1 }}</span>
+      <span class="flex-1 break-words whitespace-pre-line min-w-0">{{
+        task.title
+      }}</span>
+      <label class="flex items-center gap-2 text-sm text-gray-600 select-none">
         <small>Done</small>
         <input
           type="checkbox"

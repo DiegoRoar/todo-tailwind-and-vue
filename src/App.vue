@@ -3,9 +3,9 @@
     class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100"
   >
     <div
-      class="w-full max-w-xl mx-auto min-h-screen md:min-h-[60vh] bg-white/95 shadow-xl border border-gray-100 rounded-lg flex flex-col items-center p-4"
+      class="w-full max-w-2xl mx-auto min-h-screen md:min-h-[60vh] bg-white/95 shadow-xl border border-gray-100 rounded-lg flex flex-col items-center p-4"
     >
-      <h1 class="title-h1 text-[min(6vw,28px)] text-center my-6 tracking-tight">
+      <h1 class="title-h1 text-[min(6vw,28px)] text-center my-4 tracking-tight">
         {{ title }}
       </h1>
       <FormTasks @add-task="addTask" />

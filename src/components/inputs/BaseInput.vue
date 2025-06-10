@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col gap-1 w-full">
-    <label v-if="props.label" class="label-default w-full">
+    <label v-if="props.label" class="label-default w-full flex flex-col gap-1">
       {{ props.label }}
-      <input
+      <textarea
         :id="props.id"
         :type="props.type || 'text'"
         :placeholder="props.placeholder"
@@ -11,7 +11,7 @@
         :aria-invalid="props.ariaInvalid === true ? 'true' : undefined"
         :class="[$attrs.class]"
         @input="onInput"
-        maxlength="50"
+        maxlength="250"
       />
     </label>
   </div>

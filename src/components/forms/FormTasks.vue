@@ -1,5 +1,8 @@
 <template>
-  <form @submit.prevent="formSubmitted">
+  <form
+    @submit.prevent="formSubmitted"
+    class="flex flex-col gap-4 w-full justify-center items-center"
+  >
     <BaseInput
       label="New Task"
       v-model="newTask"
@@ -52,6 +55,8 @@ function clearMessages() {
 <style scoped>
 .button-container {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 </style>
