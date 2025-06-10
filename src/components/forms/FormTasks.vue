@@ -10,10 +10,10 @@
       :class="{ success: TaskAdded && !errorMessage }"
       @input="clearMessages"
     />
-    <p v-if="errorMessage" class="text-red-500 text-sm mt-1">
+    <p v-if="errorMessage" class="p-default text-red-500 text-sm mt-1">
       {{ errorMessage }}
     </p>
-    <p v-else-if="TaskAdded" class="text-green-500 text-sm mt-1">
+    <p v-else-if="TaskAdded" class="p-default text-green-500 text-sm mt-1">
       {{ TaskAdded }}
     </p>
     <div class="button-container">

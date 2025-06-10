@@ -21,7 +21,10 @@ body {
   }
 
   .label-default {
-    @apply text-sm font-medium text-gray-700 mb-1 w-full;
+    @apply text-sm font-medium text-gray-700 mb-1 w-full dark:text-white;
+  }
+  .p-default {
+    @apply text-gray-700 dark:text-white;
   }
   .title-h1 {
     @apply font-extrabold text-gray-900 tracking-tight mb-6 uppercase;
