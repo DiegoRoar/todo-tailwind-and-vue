@@ -9,7 +9,6 @@
         {{ title }}
       </h1>
       <FormTasks @add-task="addTask" />
-
       <!-- <p>{{ tasks.length }}</p> -->
       <p
         v-for="(task, index) in tasks"
@@ -18,6 +17,7 @@
       >
         {{ index + 1 }} |{{ task.title }}
       </p>
+      <p v-if="tasks.length < 1">Add a task to get started...</p>
     </div>
   </main>
 </template>
