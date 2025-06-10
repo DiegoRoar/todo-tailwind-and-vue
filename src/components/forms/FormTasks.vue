@@ -4,6 +4,7 @@
       label="New Task"
       v-model="newTask"
       :aria-invalid="!!errorMessage"
+      :class="{ success: TaskAdded && !errorMessage }"
       @input="clearMessages"
     />
     <p v-if="errorMessage" class="text-red-500 text-sm mt-1">

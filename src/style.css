@@ -16,6 +16,10 @@ body {
   .input-default[aria-invalid="true"] {
     @apply border-red-500 focus:ring-red-500;
   }
+  .input-default.success {
+    @apply border-green-500 focus:ring-green-500;
+  }
+
   .label-default {
     @apply text-sm font-medium text-gray-700 mb-1 w-full;
   }

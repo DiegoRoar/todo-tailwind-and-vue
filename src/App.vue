@@ -10,9 +10,13 @@
       </h1>
       <FormTasks @add-task="addTask" />
 
-      <p>{{ tasks.length }}</p>
-      <p v-for="task in tasks" :key="task.id" class="text-black text-lg">
-        {{ task.title }}
+      <!-- <p>{{ tasks.length }}</p> -->
+      <p
+        v-for="(task, index) in tasks"
+        :key="task.id"
+        class="text-black text-lg"
+      >
+        {{ index + 1 }} |{{ task.title }}
       </p>
     </div>
   </main>

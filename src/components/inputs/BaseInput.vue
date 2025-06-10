@@ -9,6 +9,7 @@
         :value="props.modelValue"
         class="input-default"
         :aria-invalid="props.ariaInvalid === true ? 'true' : undefined"
+        :class="[$attrs.class]"
         @input="onInput"
       />
     </label>
