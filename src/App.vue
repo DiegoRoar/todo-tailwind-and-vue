@@ -1,23 +1,32 @@
 <template>
   <main
-    class="w-full h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100"
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100"
   >
     <div
-      class="w-full sm:w-[95%] mx-auto h-screen bg-gray-50 shadow-2xl shadow-gray-400/60 border border-gray-200"
+      class="w-full max-w-xl mx-auto min-h-screen md:min-h-[60vh] bg-white/95 shadow-xl border border-gray-100 rounded-lg flex flex-col items-center p-4"
     >
-      <h1 class="title-h1 text-[min(4.5vw,35px)] text-center my-2">
+      <h1 class="title-h1 text-[min(7vw,32px)] text-center my-6 tracking-tight">
         {{ title }}
       </h1>
       <FormTasks @add-task="addTask" />
-      <!-- <p>{{ tasks.length }}</p> -->
-      <p
-        v-for="(task, index) in tasks"
-        :key="task.id"
-        class="text-black text-lg"
-      >
-        {{ index + 1 }} |{{ task.title }}
-      </p>
-      <p v-if="tasks.length < 1">Add a task to get started...</p>
+      <div class="w-full mt-6">
+        <div
+          v-if="tasks.length < 1"
+          class="text-gray-400 text-center text-base italic py-8"
+        >
+          Add a task to get started...
+        </div>
+        <ul v-else class="space-y-2">
+          <li
+            v-for="(task, index) in tasks"
+            :key="task.id"
+            class="flex items-center gap-2 bg-white border border-gray-100 rounded px-3 py-2 shadow-sm text-gray-800 text-base"
+          >
+            <span class="text-xs text-gray-400">{{ index + 1 }}</span>
+            <span class="flex-1 truncate">{{ task.title }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
 </template>
