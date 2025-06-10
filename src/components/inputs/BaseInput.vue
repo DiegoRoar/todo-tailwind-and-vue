@@ -7,10 +7,11 @@
         :type="props.type || 'text'"
         :placeholder="props.placeholder"
         :value="props.modelValue"
-        class="input-default"
+        class="input-default py-8"
         :aria-invalid="props.ariaInvalid === true ? 'true' : undefined"
         :class="[$attrs.class]"
         @input="onInput"
+        maxlength="50"
       />
     </label>
   </div>

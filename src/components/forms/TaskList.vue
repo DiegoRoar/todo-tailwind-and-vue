@@ -7,6 +7,14 @@
     >
       <span class="text-xs text-gray-400">{{ index + 1 }}</span>
       <span class="flex-1 truncate">{{ task.title }}</span>
+      <label class="flex items-center gap-2 text-sm text-gray-600">
+        <small>Done</small>
+        <input
+          type="checkbox"
+          @input="emits('toggleDone', task.id)"
+          :checked="task.done"
+        />
+      </label>
     </li>
   </ul>
 </template>
@@ -14,6 +22,10 @@
 <script lang="ts" setup>
 import type { Task } from "../../types";
 const props = defineProps<{ tasks: Task[] }>();
+
+const emits = defineEmits<{
+  toggleDone: [id: string];
+}>();
 </script>
 
 <style scoped></style>

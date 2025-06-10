@@ -16,7 +16,7 @@
         >
           Add a task to get started...
         </div>
-        <TaskList :tasks="tasks" />
+        <TaskList :tasks="tasks" @toggle-done="toggleDone" />
       </div>
     </div>
   </main>
@@ -36,6 +36,13 @@ const addTask = (newTask: string) => {
     title: newTask,
     done: false,
   });
+};
+
+const toggleDone = (id: string) => {
+  const task = tasks.value.find((task) => task.id === id);
+  if (task) {
+    task.done = !task.done;
+  }
 };
 </script>
 
