@@ -1,5 +1,79 @@
-# Vue 3 + TypeScript + Vite
+# 📝 Task Manager App — Vue 3 + Tailwind CSS
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![screenshot](public/vite.svg)
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🚀 Minimal, Modern, and Accessible Task Management
+
+Welcome to a professional, minimal, and fully accessible task manager built with **Vue 3**, **TypeScript**, and **Tailwind CSS**. This project is a showcase of clean component architecture, beautiful dark/light theming, and smooth UI transitions — all designed for productivity and style.
+
+---
+
+## ✨ Features
+
+- **🌗 Dark/Light Mode** — Instantly toggle between beautiful themes
+- **🎨 Consistent Design** — Custom utility classes for all UI elements
+- **🪄 Smooth Animations** — Task list items animate in and out
+- **✅ Accessible** — High-contrast, keyboard-friendly, and ARIA support
+- **📱 Responsive** — Looks great on any device
+- **🔒 TypeScript** — Strongly typed for reliability
+
+---
+
+## 🛠️ Tech Stack
+
+- [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) (with custom @layer components)
+- Component-based architecture: `BaseInput`, `BaseButton`, `FormTasks`, `TaskList`
+
+---
+
+## 📸 Preview
+
+![Light Mode Preview](https://placehold.co/600x200/white/black?text=Light+Mode+Preview)
+![Dark Mode Preview](https://placehold.co/600x200/222/fff?text=Dark+Mode+Preview)
+
+---
+
+## 🧑‍💻 How to Use
+
+1. **Clone & Install**
+   ```bash
+   git clone <your-repo-url>
+   cd componentize_practice_with_tailwind
+   npm install
+   ```
+2. **Run Locally**
+   ```bash
+   npm run dev
+   ```
+3. **Add, complete, and remove tasks with ease!**
+
+---
+
+## 💡 What Makes This App Special?
+
+- **Reusable UI**: All inputs and buttons are custom components with unified styling.
+- **Theme Toggle**: One click switches the whole app between light and dark, with instant feedback.
+- **Accessibility First**: Proper color contrast, focus rings, and ARIA states.
+- **Professional Polish**: Subtle gradients, shadows, and transitions for a delightful UX.
+- **Clean Code**: Easy to read, extend, and maintain.
+
+---
+
+## 👋 About the Author
+
+Hi! I’m a passionate front-end developer who loves building beautiful, accessible, and maintainable apps. This project demonstrates my skills in:
+
+- Modern Vue 3 composition API
+- Tailwind CSS theming and custom utility layers
+- Component-driven design
+- Accessibility best practices
+- Smooth UI/UX transitions
+
+---
+
+## ⭐️ Star this repo if you like it, and feel free to fork or reach out for collaboration!
+
+---
+
+> _“Great design is invisible, but great code is unforgettable.”_
