@@ -3,11 +3,14 @@
     <BaseInput
       label="New Task"
       v-model="newTask"
-      :class="{ 'border-red-500': errorMessage }"
-      @input="errorMessage = ''"
+      :aria-invalid="!!errorMessage"
+      @input="clearMessages"
     />
     <p v-if="errorMessage" class="text-red-500 text-sm mt-1">
       {{ errorMessage }}
+    </p>
+    <p v-else-if="TaskAdded" class="text-green-500 text-sm mt-1">
+      {{ TaskAdded }}
     </p>
     <div class="button-container">
       <BaseButton>Add</BaseButton>
@@ -26,16 +29,23 @@ const emit = defineEmits<{
 
 const newTask = ref("");
 const errorMessage = ref("");
+const TaskAdded = ref("");
 
 const formSubmitted = () => {
   if (newTask.value.trim()) {
     emit("addTask", newTask.value.trim());
     newTask.value = "";
     errorMessage.value = "";
+    TaskAdded.value = "Task added successfully!";
   } else {
     errorMessage.value = "Task cannot be empty";
   }
 };
+
+function clearMessages() {
+  errorMessage.value = "";
+  TaskAdded.value = "";
+}
 </script>
 
 <style scoped>

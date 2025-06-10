@@ -8,6 +8,7 @@
         :placeholder="props.placeholder"
         :value="props.modelValue"
         class="input-default"
+        :aria-invalid="props.ariaInvalid === true ? 'true' : undefined"
         @input="onInput"
       />
     </label>
@@ -21,6 +22,7 @@ const props = defineProps<{
   placeholder?: string;
   type?: string;
   id?: string;
+  ariaInvalid?: boolean;
 }>();
 const emit = defineEmits(["update:modelValue"]);
 
@@ -30,4 +32,6 @@ function onInput(event: Event) {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+/* No @apply or border styles here, handled globally */
+</style>
