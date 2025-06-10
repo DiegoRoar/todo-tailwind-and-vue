@@ -10,12 +10,13 @@
       </h1>
       <FormTasks @add-task="addTask" />
       <div class="w-full mt-6">
-        <div
+        <p
           v-if="tasks.length < 1"
           class="text-gray-400 text-center text-base italic py-8"
         >
           Add a task to get started...
-        </div>
+        </p>
+        <p v-else>{{ totalDone }} / {{ tasks.length }} tasks completed</p>
         <TaskList :tasks="tasks" @toggle-done="toggleDone" />
       </div>
     </div>
@@ -23,7 +24,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import FormTasks from "./components/forms/FormTasks.vue";
 import type { Task } from "./types";
 import TaskList from "./components/forms/TaskList.vue";
@@ -44,6 +45,12 @@ const toggleDone = (id: string) => {
     task.done = !task.done;
   }
 };
+
+const totalDone = computed(() =>
+  tasks.value.reduce((total, task) => (task.done ? total + 1 : total), 0)
+);
+{
+}
 </script>
 
 <style scoped></style>
