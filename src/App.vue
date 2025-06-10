@@ -17,7 +17,11 @@
           Add a task to get started...
         </p>
         <p v-else>{{ totalDone }} / {{ tasks.length }} tasks completed</p>
-        <TaskList :tasks="tasks" @toggle-done="toggleDone" />
+        <TaskList
+          :tasks="tasks"
+          @toggle-done="toggleDone"
+          @remove-task="removeTask"
+        />
       </div>
     </div>
   </main>
@@ -44,6 +48,10 @@ const toggleDone = (id: string) => {
   if (task) {
     task.done = !task.done;
   }
+};
+
+const removeTask = (id: string) => {
+  tasks.value = tasks.value.filter((task) => task.id !== id);
 };
 
 const totalDone = computed(() =>
