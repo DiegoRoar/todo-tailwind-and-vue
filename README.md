@@ -1,72 +1,122 @@
-# 📝 Task Manager App — Vue 3 + Tailwind CSS
+# 🚀 Vue 3 + Tailwind Task Manager
 
-![screenshot](public/vite.svg)
+A modern, minimal, and accessible task manager built with Vue 3, TypeScript, and Tailwind CSS. This project demonstrates advanced UI/UX, dark/light theming, and best practices in component-driven Vue development.
 
-## 🚀 Minimal, Modern, and Accessible Task Management
+---
 
-Welcome to a professional, minimal, and fully accessible task manager built with **Vue 3**, **TypeScript**, and **Tailwind CSS**. This project is a showcase of clean component architecture, beautiful dark/light theming, and smooth UI transitions, all designed for productivity and style.
+## 🌐 Live Demo
+
+> _Coming soon!_
 
 ---
 
 ## ✨ Features
 
-- **🌗 Dark/Light Mode** — Instantly toggle between beautiful themes
-- **🎨 Consistent Design** — Custom utility classes for all UI elements
-- **🪄 Smooth Animations** — Task list items animate in and out
-- **✅ Accessible** — High-contrast, keyboard-friendly, and ARIA support
-- **📱 Responsive** — Looks great on any device
-- **🔒 TypeScript** — Strongly typed for reliability
+- **Modern Tech Stack**
+
+  - Vue 3 Composition API
+  - TypeScript for type safety
+  - Tailwind CSS with custom @layer components
+  - Component-based architecture
+
+- **Task Management**
+
+  - Add, complete, and remove tasks
+  - Real-time task statistics
+  - Smooth enter/leave animations for task items
+
+- **User Experience**
+
+  - Clean, professional, and minimal interface
+  - Responsive design for all devices
+  - Beautiful dark/light mode toggle
+  - Accessible: high-contrast, keyboard-friendly, ARIA support
+
+- **Technical Highlights**
+  - Custom utility classes for unified design
+  - Instant dark/light mode switching
+  - Strongly typed with TypeScript
+  - Clean, maintainable code structure
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/) (with custom @layer components)
-- Component-based architecture: `BaseInput`, `BaseButton`, `FormTasks`, `TaskList`
+- Vue 3 + Composition API
+- TypeScript
+- Vite
+- Tailwind CSS (with custom @layer components)
+- Modern JavaScript (ES6+)
 
 ---
 
-## 🧑‍💻 How to Use
+## 🚀 Getting Started
 
-1. **Clone & Install**
+1. **Clone the repository:**
    ```bash
    git clone <your-repo-url>
-   cd todo-tailwind-and-vue
+   cd componentize_practice_with_tailwind
    npm install
    ```
-2. **Run Locally**
+2. **Run the development server:**
    ```bash
    npm run dev
    ```
-3. **Add, complete, and remove tasks with ease!**
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
 ---
 
-## 💡 What Makes This App Special?
+## 📱 Responsive & Accessible Design
 
-- **Reusable UI**: All inputs and buttons are custom components with unified styling.
-- **Theme Toggle**: One click switches the whole app between light and dark, with instant feedback.
-- **Accessibility First**: Proper color contrast, focus rings, and ARIA states.
-- **Professional Polish**: Subtle gradients, shadows, and transitions for a delightful UX.
-- **Clean Code**: Easy to read, extend, and maintain.
+- Fully responsive: desktop, tablet, and mobile
+- Accessible color contrast and focus states
+- Keyboard navigation and ARIA support
 
 ---
 
-## 👋 About the Author
+## 🎨 Design Features
 
-Hi! I’m a passionate front-end developer who loves building beautiful, accessible, and maintainable apps. This project demonstrates my skills in:
-
-- Modern Vue 3 composition API
-- Tailwind CSS theming and custom utility layers
-- Component-driven design
-- Accessibility best practices
-- Smooth UI/UX transitions
+- Minimal, magazine-inspired layout
+- Dark/light mode with instant toggle
+- Custom-styled inputs, buttons, and messages
+- Smooth task list transitions
+- Real-time task completion stats
 
 ---
 
-## ⭐️ Star this repo if you like it, and feel free to fork or reach out for collaboration!
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
 
 ---
 
-> _“Great design is invisible, but great code is unforgettable.”_
+## 📝 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author
+
+Created by [YourName](https://your-portfolio-link.com)
+
+---
+
+## ☕ Support
+
+If you find this project helpful, consider buying me a coffee!
+
+[![Buy me a coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=ko-fi&logoColor=black)](https://ko-fi.com/yourname)
+
+---
+
+## 🌟 Show Your Support
+
+Give a ⭐️ if you like this project!
+
+---
+
+Built with ❤️ using Vue 3, TypeScript, and Tailwind CSS
