@@ -6,8 +6,6 @@ A modern, minimal, and accessible task manager built with Vue 3, TypeScript, and
 
 ## 🌐 Live Demo
 
-> _Coming soon!_
-
 ---
 
 ## ✨ Features
@@ -54,8 +52,8 @@ A modern, minimal, and accessible task manager built with Vue 3, TypeScript, and
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
-   cd componentize_practice_with_tailwind
+   git clone https://github.com/DiegoRoar/todo-tailwind-and-vue.git
+   cd todo-tailwind-and-vue
    npm install
    ```
 2. **Run the development server:**
@@ -101,15 +99,15 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## 👨‍💻 Author
 
-Created by [YourName](https://your-portfolio-link.com)
+Created by [DiegoRoar](https://dheroroarweb.com)
 
 ---
 
-## ☕ Support
+## ☕ Support the Developer
 
-If you find this project helpful, consider buying me a coffee!
+If you find this project helpful, consider buying me a coffee! Your support helps me create more open-source projects.
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=ko-fi&logoColor=black)](https://ko-fi.com/yourname)
+[![Buy me a coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=ko-fi&logoColor=black)](https://ko-fi.com/diegoroar)
 
 ---
 
@@ -119,4 +117,4 @@ Give a ⭐️ if you like this project!
 
 ---
 
-Built with ❤️ using Vue 3, TypeScript, and Tailwind CSS
+Built with ❤️ by [DiegoRoar](https://dheroroarweb.com) using Vue 3 and TypeScript
