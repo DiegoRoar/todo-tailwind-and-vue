@@ -32,7 +32,7 @@ Welcome to a professional, minimal, and fully accessible task manager built with
 1. **Clone & Install**
    ```bash
    git clone <your-repo-url>
-   cd componentize_practice_with_tailwind
+   cd todo-tailwind-and-vue
    npm install
    ```
 2. **Run Locally**
