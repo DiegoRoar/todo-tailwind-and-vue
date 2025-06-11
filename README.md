@@ -35,6 +35,7 @@ A modern, minimal, and accessible task manager built with Vue 3, TypeScript, and
   - Instant dark/light mode switching
   - Strongly typed with TypeScript
   - Clean, maintainable code structure
+  - Uses Vue props, emits, and v-for for dynamic, reusable, and interactive components
 
 ---
 
