@@ -4,7 +4,7 @@
 
 ## 🚀 Minimal, Modern, and Accessible Task Management
 
-Welcome to a professional, minimal, and fully accessible task manager built with **Vue 3**, **TypeScript**, and **Tailwind CSS**. This project is a showcase of clean component architecture, beautiful dark/light theming, and smooth UI transitions — all designed for productivity and style.
+Welcome to a professional, minimal, and fully accessible task manager built with **Vue 3**, **TypeScript**, and **Tailwind CSS**. This project is a showcase of clean component architecture, beautiful dark/light theming, and smooth UI transitions, all designed for productivity and style.
 
 ---
 
@@ -24,13 +24,6 @@ Welcome to a professional, minimal, and fully accessible task manager built with
 - [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/) (with custom @layer components)
 - Component-based architecture: `BaseInput`, `BaseButton`, `FormTasks`, `TaskList`
-
----
-
-## 📸 Preview
-
-![Light Mode Preview](https://placehold.co/600x200/white/black?text=Light+Mode+Preview)
-![Dark Mode Preview](https://placehold.co/600x200/222/fff?text=Dark+Mode+Preview)
 
 ---
 
